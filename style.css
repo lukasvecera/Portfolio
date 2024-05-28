@@ -597,6 +597,9 @@ button:hover {
             to {
                 transform: translateX(100%);
             }
+        .container:hover {
+            display: none;
+         }
      }
      .image {
         display: block;
