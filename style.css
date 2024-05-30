@@ -197,10 +197,11 @@ body {
     display: flex;
     justify-content: center;
     z-index: 1;
-    opacity: 5;
 }
 
 .secondframe-photo img {
+    filter: drop-shadow(0px 0px 4px silver) 
+    drop-shadow(0px 0px 4px grey);
     border-radius: 2%;
     z-index: 1;
 }
@@ -239,12 +240,14 @@ h3 {
 .ProjectPhotos-position {
     display: flex;
     justify-content: center;
+    filter: drop-shadow(0px 0px 4px silver) 
+    drop-shadow(0px 0px 4px grey);
+    border-radius: 2%;
 }
 
 .ThirdFrame {
     display: flex;
     justify-content: space-around;
-    overflow-x: hidden;
 }
 
 .ProjectPhotos-position img {
@@ -272,6 +275,7 @@ h4 {
 .ThirdFrame-content p {
     font-size: 20px;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .glow-on-hover {
@@ -450,7 +454,7 @@ button:hover {
     color: white;
     font-size: 100px;
     text-align: center;
-    margin: 200px 100px;
+    margin: 210px 100px;
 }
 
 .projects-title {
@@ -463,10 +467,13 @@ button:hover {
 .Projects-Column img {
     border-radius: 1rem;
     margin-bottom: 2.5rem;
-    transition: transform 0.5s ease-in-out;
 }
 
-.Projects-Column img:hover {
+.container img {
+    transition: 0.2s ease-in-out !important;
+}
+
+.container img:hover {
     scale: 1.1;
 }
 
@@ -657,9 +664,11 @@ button:hover {
 
 .about-text {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     margin: 40px;
+    margin-top: 70px;
+    line-height: 2;
 }
 
 .Photos-Column {
