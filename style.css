@@ -193,7 +193,7 @@ body {
 }
 
 .secondframe-photo {
-    margin-top: 306px;
+    margin-top: 305px;
     display: flex;
     justify-content: center;
     z-index: 1;
@@ -477,6 +477,7 @@ button:hover {
 }
 
 .Photos-Column img {
+    object-fit: cover;
     border-radius: 2%;
 }
 
@@ -499,7 +500,7 @@ button:hover {
     background-color: transparent;
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (hover: none), (max-width: 1025px) {
     .Projects-Column {
         display: flex;
         flex-direction: column;
