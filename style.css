@@ -9,6 +9,14 @@
     box-sizing: border-box;
 }
 
+p {
+    line-height: 1.7;
+}
+
+.secondframe-background p{
+    line-height: normal;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     --color1: #FFF ;
@@ -104,7 +112,7 @@ body {
         display: block;
     }
     #check:checked ~ .menu {
-        right: 60px;
+        right: 0px;
     }
 }
 
@@ -454,14 +462,11 @@ button:hover {
 .Projects-Column img {
     border-radius: 1rem;
     margin-bottom: 2.5rem;
-}
-
-.Projects-Column img {
-    transition: 0.2s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .Projects-Column img:hover {
-    scale: 1.05;
+    scale: 1.1;
 }
 
 .Projects-Column {
@@ -469,6 +474,10 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.Photos-Column img {
+    border-radius: 2%;
 }
 
 .Projects-section-titles {
@@ -480,7 +489,6 @@ button:hover {
 }
 
 .image {
-    display: block;
     width: 43rem;
     height: 26rem;
 }
@@ -534,7 +542,7 @@ button:hover {
      }
 }
 
-@media only screen and (max-width: 432px) {
+@media only screen and (hover: none), (max-width: 432px) {
     .firstframe-content h1 {
         font-size: 80px;
         padding-top: 200px;
@@ -625,9 +633,6 @@ button:hover {
     .projects-title {
         font-size: 60px;
     }
-    .container:hover {
-        display: none;
-    }
     .Projects-Column {
         display: flex;
         flex-direction: column;
@@ -642,6 +647,9 @@ button:hover {
         width: auto;
         overflow-x: hidden;
         overflow-y: hidden;
+    }
+    .Projects-Column, .Photos-Column {
+        overflow-x: hidden;
     }
 }
 
