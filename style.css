@@ -197,6 +197,7 @@ body {
     display: flex;
     justify-content: center;
     z-index: 1;
+    opacity: 2;
 }
 
 .secondframe-photo img {
