@@ -193,16 +193,14 @@ body {
 }
 
 .secondframe-photo {
-    margin-top: 305px;
+    margin-top: 265px;
     display: flex;
     justify-content: center;
     z-index: 1;
 }
 
 .secondframe-photo img {
-    filter: drop-shadow(0px 0px 4px silver) 
-    drop-shadow(0px 0px 4px grey);
-    border-radius: 2%;
+    border: 2px white solid;
     z-index: 1;
 }
 
@@ -242,7 +240,6 @@ h3 {
     justify-content: center;
     filter: drop-shadow(0px 0px 4px silver) 
     drop-shadow(0px 0px 4px grey);
-    border-radius: 2%;
 }
 
 .ThirdFrame {
@@ -508,7 +505,23 @@ button:hover {
     background-color: transparent;
 }
 
-@media only screen and (hover: none), (max-width: 1025px) {
+.about-text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 40px;
+    margin-top: 70px;
+    line-height: 2;
+}
+
+@media only screen and (hover: none), (max-width: 1024px) {
+    .about-text {
+        font-size: 1.5vw;
+    }
+    .secondframe-content p, .ThirdFrame-content p {
+        font-size: 1.5vw;
+        margin: 10px;
+    }
     .Projects-Column {
         display: flex;
         flex-direction: column;
@@ -552,26 +565,37 @@ button:hover {
 }
 
 @media only screen and (hover: none), (max-width: 432px) {
+    .about-text {
+        font-size: 2.85vw;
+    }
     .firstframe-content h1 {
         font-size: 80px;
         padding-top: 200px;
     }
     .ProjectPhotos-position img {
-        width: 300px;
+        width: 200px;
     }
     .firstframe-content h2 {
         font-size: 20px;
     }
     .secondframe-photo img {
+        margin-top: 43px;
         width: 225px;
     }
     .mobile-responsivity-background {
         display: none;
     }
     .secondframe-content p {
-        margin: 4rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        font-size: 3.5vw;
+    }
+    .secondframe-content button {
+        margin-top: 30px;
+        margin-bottom: 150px;
     }
     .ThirdFrame {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -586,13 +610,14 @@ button:hover {
         gap: 3rem;
     }
     .ThirdFrame-content p {
-        font-size: 17px;
+        font-size: 2.8vw;
     }
     .ContactForm h3, .ContactForm p {
         margin-left: 1.7rem;
         margin-right: 1.7rem;
     }
     .ContactForm h3 {
+        margin-top: 100px;
         font-size: 43px;
     }
     .ContactForm p {
@@ -661,16 +686,6 @@ button:hover {
         overflow-x: hidden;
     }
 }
-
-.about-text {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    margin: 40px;
-    margin-top: 70px;
-    line-height: 2;
-}
-
 .Photos-Column {
     display: flex;
     flex-wrap: wrap;
@@ -678,7 +693,6 @@ button:hover {
     flex-direction: row;
     gap: 40px;
 }
-
 .image-photos {
     width: 30rem;
     height: 25rem;
